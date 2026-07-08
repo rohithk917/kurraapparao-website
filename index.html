@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KURRA APPARAO</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { margin: 0; font-family: Arial; }
+        .header { background: #f4c400; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header img { height: 60px; }
+        .title { font-size: 28px; font-weight: bold; }
+        .menu { background: #eee; padding: 10px; text-align: center; }
+        .menu a { margin: 0 15px; text-decoration: none; font-weight: bold; color: black; }
+        .menu select { margin-left: 20px; padding: 5px; }
+        .hero { display: flex; justify-content: space-between; align-items: center; background: #f4c400; padding: 50px; }
+        .hero-text h1 { font-size: 40px; margin: 10px 0; }
+        .hero-text .red { color: red; font-size: 48px; }
+        .leader-section { display: flex; flex-direction: column; align-items: center; margin-right: 80px; }
+        .leader-photo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid white; }
+        .leader-name { margin-top: 15px; font-weight: bold; background: white; padding: 6px 14px; border-radius: 10px; }
+        .leader-role { margin-top: 5px; }
+        .section { padding: 80px; text-align: center; }
+        .section h2 { font-size: 32px; color: #c45000; margin-bottom: 30px; }
+        .achievements-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; }
+        .achievement-card { background: linear-gradient(135deg, #fff8e1, #fff3cd); border-left: 5px solid #f4c400; border-radius: 10px; padding: 20px 25px; width: 350px; text-align: left; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .achievement-card h3 { color: #c45000; margin: 10px 0 5px; }
+        .achievement-card p { font-size: 15px; color: #333; line-height: 1.7; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="cycle.png">
+    <div class="title" id="title">Telugu Desam Party</div>
+    <img src="party.png">
+</div>
+
+<div class="menu">
+    <a href="#home" id="menu-home">Home</a>
+    <a href="#about" id="menu-about">About</a>
+    <a href="#career" id="menu-career">Political Career</a>
+    <a href="#achievements" id="menu-achievements">Achievements</a>
+    <a href="#gallery" id="menu-gallery">Gallery</a>
+    <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="te">తెలుగు</option>
+    </select>
+</div>
+
+<div id="home" class="hero">
+    <div class="hero-text">
+        <h1 id="line1">People are Gods</h1>
+        <h1 id="line2" class="red">People are our Strength</h1>
+        <h1 id="line3">People Service is our Goal</h1>
+    </div>
+    <div class="leader-section">
+        <img src="./apparao.jpeg" class="leader-photo">
+        <div class="leader-name" id="leader-name">KURRA APPARAO</div>
+        <div class="leader-role" id="leader-role">Guntur Mirchi Yard Chairman</div>
+    </div>
+</div>
+
+<div id="about" class="section">
+    <h2 id="about-title">About</h2>
+    <p id="about-content">Kurra Apparao garu is a leader who constantly walks among the people with public service as his ultimate goal. From village level to mandal level and constituency level, he is a people's leader who treats public problems as his own and always stands at the forefront to solve them. He is currently serving as Chairman of Guntur Mirchi Yard, working tirelessly for the welfare of farmers, the development of youth, and the well-being of the common people. With development as his aim and welfare as his mission, he moves forward with the vision of providing a better future for every family.</p>
+</div>
+<div id="career" class="section">
+    <h2 id="career-title">Political Career</h2>
+    <p id="career-desc">At a young age, Mr. Kurra Apparao was elected as the Mandal Youth President, served twice as a member of the District Telugu Desam Party Committee, held the position of State Telugu Yuvatha General Secretary, served as the VIDC Chairman, Tourism Corporation Director, and was elected as the Chairman of the Guntur Mirchi Yard.
+</p>
+</div>
+
+<div id="achievements" class="section">
+    <h2 id="achievements-title">Achievements</h2>
+    <div class="achievements-grid">
+
+        <div class="achievement-card">
+            <h3 id="a1-title">Free Food for Farmers</h3>
+            <p id="a1-desc">Since becoming Chairman of Guntur Mirchi Yard, Sri Kurra Apparao has been providing free quality food daily to farmers who come from distant areas, personally supervising to ensure their comfort.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3 id="a2-title">Mirchi Price Increase</h3>
+            <p id="a2-desc">Through his efforts, the price of mirchi empty bags brought by farmers was increased from Rs. 25 to Rs. 40, bringing greater financial benefit to the farmers of Guntur district.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3 id="a3-title">Donation to TDP</h3>
+            <p id="a3-desc">Sri Kurra Apparao donated Rs. 5 Lakhs to the Telugu Desam Party, demonstrating his unwavering commitment and dedication to the party.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3 id="a4-title">30 Years of Continuous Service</h3>
+            <p id="a4-desc">Sri Kurra Rattaiah and Sri Kurra Apparao have stood at the forefront for 30 years, solving problems for the party and the people alike. They stood by the poor in their times of difficulty, and their legacy of service lives on in the hearts of the people.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3 id="a5-title">Key Role in 2014 Elections</h3>
+            <p id="a5-desc">Played a pivotal role in the victory of the TDP ZPTC candidate in the 2014 elections, strengthening the party's base in Edlapadu Mandal and surrounding areas.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3 id="a6-title">Party Rebuilding After 2019</h3>
+            <p id="a6-desc">After TDP's defeat in 2019, he worked tirelessly to rebuild and strengthen the party across Ummadi Guntur District, which laid the foundation for the party's landslide victory in 2024.</p>
+        </div>
+        <div class="achievement-card">
+            <h3 id="a7-title">Free Service Activities During the COVID-19 Pandemic</h3>
+            <p id="a7-desc">During the COVID-19 pandemic, he distributed essential commodities worth approximately ₹25 lakh in his native village, Unnava, as well as in Guntur city, to support people in need.</p>
+        </div>
+        <div class="achievement-card">
+            <h3 id="a8-title">Key Role in 2024 Elections</h3>
+            <p id="a8-desc">Played a major role in the TDP victories in Chilakaluripet, Pedakurapadu, Prathipadu and Guntur West constituencies in the 2024 elections through his strong political network and dedication.</p>
+        </div>
+
+    </div>
+</div>
+<!-- GALLERY -->
+<div id="gallery" class="section">
+    <h2 id="gallery-title">Gallery</h2>
+   <div style="display:flex; flex-wrap:wrap; justify-content:flex-start; gap:30px; margin-top:20px; padding:0 40px;">
+        <div style="text-align:center; width:220px;">
+            <img src="cbn.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g1-caption" style="margin-top:8px; font-weight:bold;">AP Chief Minister Sri Nara Chandrababu Naidu garu met respectfully by Guntur Mirchi Yard Chairman Kurra Apparao garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="naralokesh.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g2-caption" style="margin-top:8px; font-weight:bold;">AP IT Minister Sri Nara Lokesh garu met respectfully by Guntur Mirchi Yard Chairman Kurra Apparao garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="pemmasani.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g3-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao garu with Union Minister of State for Rural Development Sri Pemmasani Chandra Sekhar garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="anagani.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g4-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Revenue Minister Sri Anagani Satya Prasad garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="payyavula.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g5-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Finance Minister Sri Payyavula Kesav garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="nadendla.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g6-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Civil Supplies Minister Sri Nadendla Manohar garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="gottipati.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g7-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Electricity Minister Sri Gottipati Ravi Kumar garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="kinjarapu.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g8-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Agriculture Minister Sri Kinjarapu Achennaidu garu.</p>
+        </div>
+
+        <div style="text-align:center; width:220px;">
+            <img src="police.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g9-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao paid a courtesy visit to Guntur Range IG Sarvashresth Tripathi.</p>
+        </div>
+        <div style="text-align:center; width:220px;">
+            <img src="ppr.jpeg" style="width:220px; height:230px; object-fit:cover; border-radius:10px; border:3px solid #f4c400;">
+            <p id="g10-caption" style="margin-top:8px; font-weight:bold;">Guntur Mirchi Yard Chairman Kurra Apparao is with Chilakaluripeta MLA Prathipati Pullarao garu.
+
+    </div>
+</div>
+</div>
+<script>
+function changeLanguage(lang) {
+    if (!lang) lang = document.getElementById("language").value;
+
+    if (lang === "te") {
+        document.getElementById("title").innerText = "తెలుగుదేశం పార్టీ";
+        document.getElementById("menu-home").innerText = "హోమ్";
+        document.getElementById("menu-about").innerText = "గురించి";
+        document.getElementById("menu-career").innerText = "రాజకీయ నేపథ్యం";
+        document.getElementById("menu-achievements").innerText = "విజయాలు";
+        document.getElementById("menu-gallery").innerText = "గ్యాలరీ";
+        document.getElementById("line1").innerText = "ప్రజలే దేవుళ్లు";
+        document.getElementById("line2").innerText = "ప్రజలే మా శక్తి";
+        document.getElementById("line3").innerText = "ప్రజాసేవే మా లక్ష్యం";
+        document.getElementById("leader-name").innerText = "కుర్రా అప్పారావు";
+        document.getElementById("leader-role").innerText = "గుంటూరు మిర్చి యార్డ్ చైర్మన్";
+        document.getElementById("about-title").innerText = "గురించి";
+        document.getElementById("about-content").innerText = "ప్రజాసేవే పరమావధిగా నిరంతరం ప్రజల మధ్య నడుస్తున్న నాయకుడు కుర్రా అప్పారావు గారు. గ్రామ స్థాయి నుండి మండల స్థాయి, నియోజకవర్గ స్థాయి వరకు ప్రజల సమస్యలను తన సమస్యలుగా భావించి, వాటి పరిష్కారానికి ఎల్లప్పుడూ ముందుండే ప్రజానాయకుడు.ప్రస్తుతం గుంటూరు మిర్చి యార్డ్ చైర్మన్‌గా రైతుల సంక్షేమం, యువత అభివృద్ధి మరియు సామాన్య ప్రజల శ్రేయస్సు కోసం అహర్నిశలు కృషి చేస్తున్నారు. అభివృద్ధే లక్ష్యంగా, సంక్షేమమే ధ్యేయంగా ప్రతి కుటుంబానికి మెరుగైన భవిష్యత్తు అందించాలనే సంకల్పంతో ముందుకు సాగుతున్న దూరదృష్టి కలిగిన నాయకుడు.";
+        document.getElementById("career-title").innerText = "రాజకీయ నేపథ్యం";
+        document.getElementById("career-desc").innerText = "కుర్రా అప్పారావు గారు అతి చిన్న వయసులోనే మండల యూత్ ప్రెసిడెంట్ గా, జిల్లా తెలుగుదేశం పార్టీ కమిటీలో రెండుసార్లు, రాష్ట్ర తెలుగు యువత ప్రధాన కార్యదర్శిగా, విడిసి చైర్మన్ గా, టూరిజం కార్పొరేషన్ డైరెక్టర్ గా, గుంటూరు మిర్చి యార్డ్ చైర్మన్ గా ఎన్నికయ్యారు.";
+        document.getElementById("achievements-title").innerText = "విజయాలు";
+        document.getElementById("gallery-title").innerText = "గ్యాలరీ";
+        document.getElementById("a1-title").innerText = "రైతులకు ఉచిత భోజన పంపిణీ";
+        document.getElementById("a1-desc").innerText = "గుంటూరు మిర్చి యార్డ్ చైర్మన్ పదవి చేపట్టిన నాటి నుండి శ్రీ కుర్రా అప్పారావు గారు, దూరప్రాంతాల నుండి వచ్చే రైతులకు ప్రతిరోజూ నాణ్యమైన భోజనాన్ని ఉచితంగా అందిస్తున్నారు. రైతులకు ఎలాంటి ఇబ్బంది కలగకుండా స్వయంగా పర్యవేక్షిస్తున్నారు.";
+        document.getElementById("a2-title").innerText = "మిర్చి టిక్కీల ధర పెంపు";
+        document.getElementById("a2-desc").innerText = "రైతులు తెచ్చే మిర్చి కాళీ టిక్కీల ధరను రూ. 25 నుండి రూ. 40 కు పెంచడంలో కీలక పాత్ర పోషించారు. దీని వల్ల గుంటూరు జిల్లా రైతులకు మరింత ఆర్థిక లాభం చేకూరింది.";
+        document.getElementById("a3-title").innerText = "TDP కి రూ.5 లక్షలు విరాళం";
+        document.getElementById("a3-desc").innerText = "శ్రీ కుర్రా అప్పారావు గారు తెలుగు దేశం పార్టీ కి రూ. 5 లక్షలు విరాళంగా అందించారు. పార్టీ పట్ల తమకున్న అచంచలమైన విశ్వాసానికి మరియు నిబద్ధతకు ఇది నిదర్శనం.";
+        document.getElementById("a4-title").innerText = "30 సంవత్సరాల నిరంతర సేవ";
+        document.getElementById("a4-desc").innerText = "శ్రీ కుర్రా రత్తయ్య గారు మరియు శ్రీ కుర్రా అప్పారావు గారు గత 30 సంవత్సరాలుగా పార్టీ కోసమైనా, ప్రజల కోసమైనా ఎప్పుడు సమస్య వచ్చినా ముందుండి పరిష్కరించారు. పేద ప్రజలకు అండగా నిలిచి, వారి కష్టాలలో చేయూతనిచ్చారు. తండ్రి నుండి కొడుకుకు వచ్చిన సేవా పరంపర ప్రజల హృదయాలలో చిరస్థాయిగా నిలిచింది.";
+        document.getElementById("a5-title").innerText = "2014 ఎన్నికలలో కీలక పాత్ర";
+        document.getElementById("a5-desc").innerText = "2014 సంవత్సరంలో జరిగిన ఎన్నికలలో తెలుగు దేశం పార్టీ యడ్లపాడు మండల ZPTC అభ్యర్థి విజయం సాధించడంలో శ్రీ కుర్రా అప్పారావు గారు కీలక పాత్ర పోషించారు. వారి అకుంఠిత కృషి మరియు ప్రజా మద్దతు వల్ల పార్టీ విజయం సాధించింది.";
+        document.getElementById("a6-title").innerText = "2019 తర్వాత పార్టీ పునర్నిర్మాణం";
+        document.getElementById("a6-desc").innerText = "2019 ఎన్నికలలో తెలుగు దేశం పార్టీ ఓటమి పాలైన తర్వాత, శ్రీ కుర్రా అప్పారావు గారు నిరుత్సాహపడకుండా ఉమ్మడి గుంటూరు జిల్లాలో పార్టీని మరింత బలోపేతం చేయడానికి అవిరళంగా కృషి చేశారు. ఇది 2024 ఎన్నికలలో పార్టీ అద్భుత విజయానికి పునాది అయింది.";
+  document.getElementById("a7-title").innerText = "కరోనా సమయములో ఉచిత సేవా కార్యక్రమం";
+document.getElementById("a7-desc").innerText = "కరోనా సమయంలో తమ సొంత గ్రామమైన ఉన్నవ గ్రామంలో మరియు గుంటూరు పట్టణంలో సుమారు 25 లక్షల రూపాయల గల రూపాయలు విలువ గల నిత్యవసర సరుకులు పంపిణీ చేశారు.";
+        document.getElementById("a8-title").innerText = "2024 ఎన్నికలలో కీలక పాత్ర";
+          document.getElementById("a8-desc").innerText = "2024 సంవత్సరంలో జరిగిన ఎన్నికలలో చిలకలూరిపేట, పెదకూరపాడు, ప్రత్తిపాడు  మరియు గుంటూరు వెస్ట్ నియోజకవర్గాలలో తెలుగు దేశం పార్టీ విజయం సాధించడంలో శ్రీ కుర్రా అప్పారావు గారు కీలక పాత్ర పోషించారు.";
+document.getElementById("g1-caption").innerText = "ఆంధ్రప్రదేశ్ రాష్ట్ర ముఖ్యమంత్రివర్యులు శ్రీ నారా చంద్రబాబు నాయుడు గారిని మర్యాదపూర్వకంగా కలిసిన గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g2-caption").innerText = "ఆంధ్రప్రదేశ్ సమాచార సాంకేతిక శాఖ మంత్రివర్యులు శ్రీ నారా లోకేష్ గారిని మర్యాదపూర్వకంగా కలిసిన గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g3-caption").innerText = "కేంద్ర గ్రామీణాభివృద్ధి శాఖ సహాయ మంత్రివర్యులు శ్రీ పెమ్మసాని చంద్రశేఖర్ గారితో గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు";
+
+document.getElementById("g4-caption").innerText = "ఆంధ్రప్రదేశ్ రాష్ట్ర రెవెన్యూ శాఖ మంత్రివర్యులు శ్రీ అనగాని సత్యప్రసాద్ గారితో గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g5-caption").innerText = "ఆంధ్రప్రదేశ్ రాష్ట్ర ఆర్థిక శాఖ మంత్రివర్యులు శ్రీ పయ్యావుల కేశవ్ గారితో గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g6-caption").innerText = "ఆంధ్రప్రదేశ్ రాష్ట్ర పౌర సరఫరాల శాఖ మంత్రివర్యులు శ్రీ నాదెండ్ల మనోహర్ గారితో గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు";
+document.getElementById("g7-caption").innerText = "ఆంధ్రప్రదేశ్ రాష్ట్ర వ్యవసాయ శాఖ మంత్రివర్యులు శ్రీ కింజరాపు అచ్చెన్నాయుడు గారితో గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g8-caption").innerText = "ఆంధ్రప్రదేశ్ రాష్ట్ర విద్యుత్ శాఖ మంత్రివర్యులు శ్రీ గొట్టిపాటి రవికుమార్ గారితో గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g9-caption").innerText = "గుంటూరు రేంజ్ ఐజీ సర్వశ్రేష్ఠ త్రిపాఠి గారిని మర్యాదపూర్వకంగా కలిసిన గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+document.getElementById("g10-caption").innerText = "చిలకలూరిపేట నియోజకవర్గ శాసనసభ్యులు ప్రత్తిపాటి పుల్లారావు గారిని మార్దపూర్వకముగా కలిసిన గుంటూరు మిర్చి యార్డ్ చైర్మన్ కుర్రా అప్పారావు గారు.";
+    } else {
+        document.getElementById("title").innerText = "Telugu Desam Party";
+        document.getElementById("menu-home").innerText = "Home";
+        document.getElementById("menu-about").innerText = "About";
+        document.getElementById("menu-career").innerText = "Political Career";
+        document.getElementById("menu-achievements").innerText = "Achievements";
+        document.getElementById("menu-gallery").innerText = "Gallery";
+        document.getElementById("line1").innerText = "People are Gods";
+        document.getElementById("line2").innerText = "People are our Strength";
+        document.getElementById("line3").innerText = "People are our Goal";
+        document.getElementById("leader-name").innerText = "KURRA APPARAO";
+        document.getElementById("leader-role").innerText = "Guntur Mirchi Yard Chairman";
+        document.getElementById("about-title").innerText = "About";
+        document.getElementById("about-content").innerText = "Kurra Apparao garu is a leader who constantly walks among the people with public service as his ultimate goal. From village level to mandal level and constituency level, he is a people's leader who treats public problems as his own and always stands at the forefront to solve them.He is currently serving as Chairman of Guntur Mirchi Yard, working tirelessly for the welfare of farmers, the development of youth, and the well-being of the common people. With development as his aim and welfare as his mission, he moves forward with the vision of providing a better future for every family.";
+        document.getElementById("career-title").innerText = "Political Career";
+        document.getElementById("career-desc").innerText = "At a young age, Mr. Kurra Apparao was elected as the Mandal Youth President, served twice as a member of the District Telugu Desam Party Committee, held the position of State Telugu Yuvatha General Secretary, served as the VIDC Chairman, Tourism Corporation Director, and was elected as the Chairman of the Guntur Mirchi Yard.";
+        document.getElementById("achievements-title").innerText = "Achievements";
+        document.getElementById("gallery-title").innerText = "Gallery";
+        document.getElementById("a1-title").innerText = "Free Food for Farmers";
+        document.getElementById("a1-desc").innerText = "Since becoming Chairman of Guntur Mirchi Yard, Sri Kurra Apparao has been providing free quality food daily to farmers who come from distant areas, personally supervising to ensure their comfort.";
+        document.getElementById("a2-title").innerText = "Mirchi Price Increase";
+        document.getElementById("a2-desc").innerText = "Through his efforts, the price of mirchi empty bags brought by farmers was increased from Rs. 25 to Rs. 40, bringing greater financial benefit to the farmers of Guntur district.";
+        document.getElementById("a3-title").innerText = "Donation to TDP";
+        document.getElementById("a3-desc").innerText = "Sri Kurra Apparao donated Rs. 5 Lakhs to the Telugu Desam Party, demonstrating his unwavering commitment and dedication to the party.";
+        document.getElementById("a4-title").innerText = "30 Years of Continuous Service";
+        document.getElementById("a4-desc").innerText = "Sri Kurra Rattaiah and Sri Kurra Apparao have stood at the forefront for 30 years, solving problems for the party and the people alike. They stood by the poor in their times of difficulty, and their legacy of service lives on in the hearts of the people.";
+        document.getElementById("a5-title").innerText = "Key Role in 2014 Elections";
+        document.getElementById("a5-desc").innerText = "Played a pivotal role in the victory of the TDP ZPTC candidate in the 2014 elections, strengthening the party's base in Edlapadu Mandal and surrounding areas.";
+        document.getElementById("a6-title").innerText = "Party Rebuilding After 2019";
+        document.getElementById("a6-desc").innerText = "After TDP's defeat in 2019, he worked tirelessly to rebuild and strengthen the party across Ummadi Guntur District, which laid the foundation for the party's landslide victory in 2024.";
+document.getElementById("a7-title").innerText = "Free Service Activities During the COVID-19 Pandemic";
+document.getElementById("a7-desc").innerText = "During the COVID-19 pandemic, he distributed essential commodities worth approximately ₹25 lakh in his native village, Unnava, as well as in Guntur city, to support people in need.";
+        document.getElementById("a8-title").innerText = "Key Role in 2024 Elections";
+        document.getElementById("a8-desc").innerText = "Played a major role in the TDP victories in Chilakaluripet, Pedakurapadu, Prathipadu and Guntur West constituencies in the 2024 elections through his strong political network and dedication.";
+document.getElementById("g1-caption").innerText = "AP Chief Minister Sri Nara Chandrababu Naidu garu met respectfully by Guntur Mirchi Yard Chairman Kurra Apparao garu.";
+document.getElementById("g2-caption").innerText = "AP IT Minister Sri Nara Lokesh garu met respectfully by Guntur Mirchi Yard Chairman Kurra Apparao garu.";
+document.getElementById("g3-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao garu with Union Minister of State for Rural Development Sri Pemmasani Chandra Sekhar garu.";
+document.getElementById("g4-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Revenue Minister Sri Anagani Satya Prasad garu.";
+document.getElementById("g5-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Finance Minister Sri Payyavula Kesav garu";
+document.getElementById("g6-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Civil Supplies Minister Sri Nadendla Manohar garu.";
+document.getElementById("g7-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Agriculture Minister Sri Kinjarapu Achennaidu garu.";
+document.getElementById("g8-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao garu with AP Electricity Minister Sri Gottipati Ravi Kumar garu.";
+document.getElementById("g9-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao paid a courtesy visit to Guntur Range IG Sarvashresth Tripathi.";
+document.getElementById("g10-caption").innerText = "Guntur Mirchi Yard Chairman Kurra Apparao is with Chilakaluripeta MLA Prathipati Pullarao garu.";
+
+    }
+}
+</script>
+
+</body>
+</html>
